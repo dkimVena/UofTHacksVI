@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08980F049B74EABDA2216E30 /* Pods_RecoveryAid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55EF2BFAB7BC72B376839B3E /* Pods_RecoveryAid.framework */; };
+		FA25864021F424330077F8F0 /* ObjectGameInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25863F21F424330077F8F0 /* ObjectGameInstructionsViewController.swift */; };
+		FA3C892321F393790012031F /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C892221F393790012031F /* FirebaseManager.swift */; };
+		FA3C892521F3955D0012031F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA3C892421F3955D0012031F /* GoogleService-Info.plist */; };
+		FA3C892721F3970D0012031F /* ErrorAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C892621F3970D0012031F /* ErrorAlertViewController.swift */; };
+		FA3C892921F399DA0012031F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C892821F399DA0012031F /* TabBarController.swift */; };
+		FA3C892B21F39A5C0012031F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C892A21F39A5C0012031F /* SignUpViewController.swift */; };
+		FA3C892D21F3A20E0012031F /* GameIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C892C21F3A20E0012031F /* GameIndexViewController.swift */; };
+		FA3C892F21F3DD350012031F /* ObjectGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C892E21F3DD350012031F /* ObjectGameViewController.swift */; };
+		FA3C893121F3DE5D0012031F /* EmotionGameInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C893021F3DE5D0012031F /* EmotionGameInstructionsViewController.swift */; };
+		FA3C893321F3E0530012031F /* ObjectGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C893221F3E0530012031F /* ObjectGame.swift */; };
+		FAF4869C21F2DFE1001AF61F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4869B21F2DFE1001AF61F /* AppDelegate.swift */; };
+		FAF4869E21F2DFE1001AF61F /* EmotionGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4869D21F2DFE1001AF61F /* EmotionGameViewController.swift */; };
+		FAF486A121F2DFE1001AF61F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF4869F21F2DFE1001AF61F /* Main.storyboard */; };
+		FAF486A321F2DFE4001AF61F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF486A221F2DFE4001AF61F /* Assets.xcassets */; };
+		FAF486A621F2DFE4001AF61F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF486A421F2DFE4001AF61F /* LaunchScreen.storyboard */; };
+		FAF486B421F2E40E001AF61F /* CNNEmotions.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FAF486B321F2E40E001AF61F /* CNNEmotions.mlmodel */; };
+		FAF486B621F2E6DE001AF61F /* EmotionGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF486B521F2E6DE001AF61F /* EmotionGame.swift */; };
+		FAF486BA21F384A5001AF61F /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FAF486B921F384A5001AF61F /* Inceptionv3.mlmodel */; };
+		FAF486BC21F38A88001AF61F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF486BB21F38A88001AF61F /* Extensions.swift */; };
+		FAF486BE21F38B15001AF61F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF486BD21F38B15001AF61F /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55EF2BFAB7BC72B376839B3E /* Pods_RecoveryAid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecoveryAid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		778479564EE7E863754512B7 /* Pods-RecoveryAid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecoveryAid.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecoveryAid/Pods-RecoveryAid.release.xcconfig"; sourceTree = "<group>"; };
+		DCC670A3BD9A8F4AF3DAFF8E /* Pods-RecoveryAid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecoveryAid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecoveryAid/Pods-RecoveryAid.debug.xcconfig"; sourceTree = "<group>"; };
+		FA25863F21F424330077F8F0 /* ObjectGameInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectGameInstructionsViewController.swift; sourceTree = "<group>"; };
+		FA3C892221F393790012031F /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		FA3C892421F3955D0012031F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA3C892621F3970D0012031F /* ErrorAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorAlertViewController.swift; sourceTree = "<group>"; };
+		FA3C892821F399DA0012031F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FA3C892A21F39A5C0012031F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FA3C892C21F3A20E0012031F /* GameIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameIndexViewController.swift; path = "RecoveryAid/View Controllers/GameIndexViewController.swift"; sourceTree = SOURCE_ROOT; };
+		FA3C892E21F3DD350012031F /* ObjectGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectGameViewController.swift; sourceTree = "<group>"; };
+		FA3C893021F3DE5D0012031F /* EmotionGameInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionGameInstructionsViewController.swift; sourceTree = "<group>"; };
+		FA3C893221F3E0530012031F /* ObjectGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectGame.swift; sourceTree = "<group>"; };
+		FAF4869821F2DFE1001AF61F /* RecoveryAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecoveryAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF4869B21F2DFE1001AF61F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAF4869D21F2DFE1001AF61F /* EmotionGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionGameViewController.swift; sourceTree = "<group>"; };
+		FAF486A021F2DFE1001AF61F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAF486A221F2DFE4001AF61F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF486A521F2DFE4001AF61F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAF486A721F2DFE4001AF61F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF486B321F2E40E001AF61F /* CNNEmotions.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CNNEmotions.mlmodel; sourceTree = "<group>"; };
+		FAF486B521F2E6DE001AF61F /* EmotionGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionGame.swift; sourceTree = "<group>"; };
+		FAF486B921F384A5001AF61F /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		FAF486BB21F38A88001AF61F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FAF486BD21F38B15001AF61F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF4869521F2DFE1001AF61F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08980F049B74EABDA2216E30 /* Pods_RecoveryAid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30ED1C67D00766DC1BD36C01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55EF2BFAB7BC72B376839B3E /* Pods_RecoveryAid.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E04863A3E66D2DF5D002B299 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCC670A3BD9A8F4AF3DAFF8E /* Pods-RecoveryAid.debug.xcconfig */,
+				778479564EE7E863754512B7 /* Pods-RecoveryAid.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAF4868F21F2DFE1001AF61F = {
+			isa = PBXGroup;
+			children = (
+				FAF4869A21F2DFE1001AF61F /* RecoveryAid */,
+				FAF4869921F2DFE1001AF61F /* Products */,
+				E04863A3E66D2DF5D002B299 /* Pods */,
+				30ED1C67D00766DC1BD36C01 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF4869921F2DFE1001AF61F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF4869821F2DFE1001AF61F /* RecoveryAid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF4869A21F2DFE1001AF61F /* RecoveryAid */ = {
+			isa = PBXGroup;
+			children = (
+				FAF486C221F38B7F001AF61F /* Support */,
+				FAF486C121F38B3F001AF61F /* ML Models */,
+				FAF486BF21F38B2A001AF61F /* View Controllers */,
+				FAF486C021F38B34001AF61F /* Models */,
+				FAF4869F21F2DFE1001AF61F /* Main.storyboard */,
+				FAF486A221F2DFE4001AF61F /* Assets.xcassets */,
+				FAF486A421F2DFE4001AF61F /* LaunchScreen.storyboard */,
+				FAF486A721F2DFE4001AF61F /* Info.plist */,
+				FA3C892421F3955D0012031F /* GoogleService-Info.plist */,
+			);
+			path = RecoveryAid;
+			sourceTree = "<group>";
+		};
+		FAF486BF21F38B2A001AF61F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF4869D21F2DFE1001AF61F /* EmotionGameViewController.swift */,
+				FA3C892E21F3DD350012031F /* ObjectGameViewController.swift */,
+				FA25863F21F424330077F8F0 /* ObjectGameInstructionsViewController.swift */,
+				FA3C892C21F3A20E0012031F /* GameIndexViewController.swift */,
+				FA3C893021F3DE5D0012031F /* EmotionGameInstructionsViewController.swift */,
+				FA3C892621F3970D0012031F /* ErrorAlertViewController.swift */,
+				FAF486BD21F38B15001AF61F /* LoginViewController.swift */,
+				FA3C892A21F39A5C0012031F /* SignUpViewController.swift */,
+				FA3C892821F399DA0012031F /* TabBarController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FAF486C021F38B34001AF61F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C893221F3E0530012031F /* ObjectGame.swift */,
+				FAF486B521F2E6DE001AF61F /* EmotionGame.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAF486C121F38B3F001AF61F /* ML Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAF486B321F2E40E001AF61F /* CNNEmotions.mlmodel */,
+				FAF486B921F384A5001AF61F /* Inceptionv3.mlmodel */,
+			);
+			path = "ML Models";
+			sourceTree = "<group>";
+		};
+		FAF486C221F38B7F001AF61F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C892221F393790012031F /* FirebaseManager.swift */,
+				FAF4869B21F2DFE1001AF61F /* AppDelegate.swift */,
+				FAF486BB21F38A88001AF61F /* Extensions.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF4869721F2DFE1001AF61F /* RecoveryAid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF486AA21F2DFE4001AF61F /* Build configuration list for PBXNativeTarget "RecoveryAid" */;
+			buildPhases = (
+				8D87802C44AA7BDDABA9B43E /* [CP] Check Pods Manifest.lock */,
+				FAF4869421F2DFE1001AF61F /* Sources */,
+				FAF4869521F2DFE1001AF61F /* Frameworks */,
+				FAF4869621F2DFE1001AF61F /* Resources */,
+				78302E77E6A604BD4CAF4800 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecoveryAid;
+			productName = RecoveryAid;
+			productReference = FAF4869821F2DFE1001AF61F /* RecoveryAid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF4869021F2DFE1001AF61F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jacob Goldfarb";
+				TargetAttributes = {
+					FAF4869721F2DFE1001AF61F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FAF4869321F2DFE1001AF61F /* Build configuration list for PBXProject "RecoveryAid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF4868F21F2DFE1001AF61F;
+			productRefGroup = FAF4869921F2DFE1001AF61F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF4869721F2DFE1001AF61F /* RecoveryAid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF4869621F2DFE1001AF61F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF486A621F2DFE4001AF61F /* LaunchScreen.storyboard in Resources */,
+				FA3C892521F3955D0012031F /* GoogleService-Info.plist in Resources */,
+				FAF486A321F2DFE4001AF61F /* Assets.xcassets in Resources */,
+				FAF486A121F2DFE1001AF61F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78302E77E6A604BD4CAF4800 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RecoveryAid/Pods-RecoveryAid-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecoveryAid/Pods-RecoveryAid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D87802C44AA7BDDABA9B43E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecoveryAid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF4869421F2DFE1001AF61F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3C892F21F3DD350012031F /* ObjectGameViewController.swift in Sources */,
+				FA3C892B21F39A5C0012031F /* SignUpViewController.swift in Sources */,
+				FA3C892921F399DA0012031F /* TabBarController.swift in Sources */,
+				FAF486BE21F38B15001AF61F /* LoginViewController.swift in Sources */,
+				FAF486BA21F384A5001AF61F /* Inceptionv3.mlmodel in Sources */,
+				FA3C892721F3970D0012031F /* ErrorAlertViewController.swift in Sources */,
+				FA3C892D21F3A20E0012031F /* GameIndexViewController.swift in Sources */,
+				FA3C893321F3E0530012031F /* ObjectGame.swift in Sources */,
+				FA3C893121F3DE5D0012031F /* EmotionGameInstructionsViewController.swift in Sources */,
+				FAF486BC21F38A88001AF61F /* Extensions.swift in Sources */,
+				FA25864021F424330077F8F0 /* ObjectGameInstructionsViewController.swift in Sources */,
+				FAF486B421F2E40E001AF61F /* CNNEmotions.mlmodel in Sources */,
+				FA3C892321F393790012031F /* FirebaseManager.swift in Sources */,
+				FAF486B621F2E6DE001AF61F /* EmotionGame.swift in Sources */,
+				FAF4869E21F2DFE1001AF61F /* EmotionGameViewController.swift in Sources */,
+				FAF4869C21F2DFE1001AF61F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAF4869F21F2DFE1001AF61F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF486A021F2DFE1001AF61F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAF486A421F2DFE4001AF61F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF486A521F2DFE4001AF61F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF486A821F2DFE4001AF61F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF486A921F2DFE4001AF61F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF486AB21F2DFE4001AF61F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC670A3BD9A8F4AF3DAFF8E /* Pods-RecoveryAid.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4Q8ZA92YZ;
+				INFOPLIST_FILE = RecoveryAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jacob-Goldfarb.RecoveryAid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF486AC21F2DFE4001AF61F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778479564EE7E863754512B7 /* Pods-RecoveryAid.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4Q8ZA92YZ;
+				INFOPLIST_FILE = RecoveryAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jacob-Goldfarb.RecoveryAid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF4869321F2DFE1001AF61F /* Build configuration list for PBXProject "RecoveryAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF486A821F2DFE4001AF61F /* Debug */,
+				FAF486A921F2DFE4001AF61F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF486AA21F2DFE4001AF61F /* Build configuration list for PBXNativeTarget "RecoveryAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF486AB21F2DFE4001AF61F /* Debug */,
+				FAF486AC21F2DFE4001AF61F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF4869021F2DFE1001AF61F /* Project object */;
+}

@@ -1,3 +1,3 @@
 # CORTEX - UotTHacks VI
 
-[DEV POST](https://devpost.com/software/cortex){:target="_blank"}
+[DEV POST](https://devpost.com/software/cortex target="_blank)
